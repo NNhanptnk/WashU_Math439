@@ -1,0 +1,6 @@
+setwd('/Users/nhannguyen/Desktop/Project/WashU_Math439/')
+data <- read.csv("Mineral_Dataset_Supplementary_Info.csv")
+
+fullmodel <- lm(Hardness ~ 
+                  allelectrons_Total+density_Total+allelectrons_Average+val_e_Average+atomicweight_Average+ionenergy_Average+el_neg_chi_Average+R_vdw_element_Average+R_cov_element_Average+zaratio_Average+density_Average, data=data)
+summary(fullmodel)
